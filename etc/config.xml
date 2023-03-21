@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+		<carriers>
+	      <ruch>
+	           <active>1</active>
+	           <model>Magento\RuchShip\Model\Carrier\Shipping</model>
+	           <title>Orlen</title>
+	           <label>Orlen Paczka</label>
+	           <filter>1</filter>
+	           <price>8</price>
+	           <priceCOD>10</priceCOD>
+	           <sendMail>0</sendMail>
+	           <sendSms>0</sendSms>
+	           <readyOffset>1</readyOffset>
+	           <sandbox>1</sandbox>
+	           <apiID>demo</apiID>
+	           <apiPass>demo</apiPass>
+	           <codActive>1</codActive>
+	           <wartoscUbezpieczenia>0</wartoscUbezpieczenia>
+	           <DefaultHeight>15</DefaultHeight>
+	           <DefaultWidth>15</DefaultWidth>
+	           <DefaultDeep>15</DefaultDeep>
+	           <DefaultWeight>10</DefaultWeight>
+	           <CreatePackage>1</CreatePackage>
+			   <showDeliveryFilter>0</showDeliveryFilter>
+			   <deliveryFilterValue>0</deliveryFilterValue>
+			   <showPointTypeFilter>0</showPointTypeFilter>
+			   <pointTypeFilterValue>0</pointTypeFilterValue>
+	           <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+	           <shipment_requesttype>0</shipment_requesttype>
+	           <name38>Ekonomiczny</name38>
+	        </ruch>
+	     </carriers>
+    </default>
+</config>

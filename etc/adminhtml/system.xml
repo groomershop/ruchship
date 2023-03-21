@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="carriers">
+            <group id="ruch" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Orlen</label>
+                <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Aktywny</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="title" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Nazwa przewoźnika</label>
+                </field>
+                <field id="label" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Nazwa metody dostawy</label>
+                </field>
+                <field id="sandbox" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Tryb testowy</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="apiID" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>ID API</label>
+                </field>
+                <field id="apiPass" translate="label" type="text" sortOrder="7" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Hasło API</label>
+                </field>
+                <field id="codActive" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>COD</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="sendMail" translate="label" type="select" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Powiadomienie e-mail</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="sendSms" translate="label" type="select" sortOrder="16" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Powiadomienie SMS</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="filter" translate="label" type="select" sortOrder="21" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Filtrowanie metod płatności</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="wartoscUbezpieczenia" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Wartość ubezpieczenia</label>
+                </field>
+                <field id="DefaultHeight" translate="label" type="text" sortOrder="32" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Domyślna wysokość paczki (cm)</label>
+                </field>
+                <field id="DefaultWidth" translate="label" type="text" sortOrder="33" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Domyślna szerokość (cm)</label>
+                </field>
+                <field id="DefaultDeep" translate="label" type="text" sortOrder="34" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Domyślna głębokość (cm)</label>
+                </field>
+                <field id="DefaultWeight" translate="label" type="text" sortOrder="35" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Domyślna waga (kg)</label>
+                </field>
+                <field id="price" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Cena</label>
+                </field>
+                <field id="priceCOD" translate="label" type="text" sortOrder="41" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Cena COD</label>
+                </field>
+                <field id="showDeliveryFilter" translate="label" type="select" sortOrder="42" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Wyświetl filtr rodzaju dostawy</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="deliveryFilterValue" translate="label" type="select" sortOrder="43" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Rodzaj dostawy</label>
+                    <source_model>Magento\RuchShip\Block\DeliveryOptions</source_model>
+                </field>
+                <field id="showPointTypeFilter" translate="label" type="select" sortOrder="44" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Wyświetl filtr typu punktu</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="pointTypeFilterValue" translate="label" type="select" sortOrder="45" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Rodzaj punktu</label>
+                    <source_model>Magento\RuchShip\Block\PointTypeOptions</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="https://ruch-osm.sysadvisors.pl/widget.css" src_type="url" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+    <referenceContainer name="content">
+      <block class="Magento\RuchShip\Block\Params" name="checkout.cart.ruch_params" before="checkout.root" template="Magento_RuchShip::params.phtml">
+      </block>
+    </referenceContainer>
+    </body>
+</page>

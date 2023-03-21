@@ -1,0 +1,12 @@
+{
+    "name": "magento/ruchship",
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Magento\\RuchShip\\": ""
+        }
+    }
+}

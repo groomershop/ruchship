@@ -32,7 +32,7 @@ class PaymentMethodIsActive implements ObserverInterface
 		$result = $event->getResult();
 		$carriers = $this->cart->getQuote()->getShippingAddress()->getShippingMethod();
 		$akt = $this->scopeConfig->getValue('carriers/ruch/active') && $this->scopeConfig->getValue('carriers/ruch/filter');
-		if(!$akt) {	// Plugin inactive or inactive filtering in config
+		if(!$akt || $carriers === null) {	// Plugin inactive or inactive filtering in config
 		}
 		else {
 			$tmp = explode('_', $carriers);

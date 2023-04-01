@@ -77,6 +77,9 @@
                     <label>Rodzaj punktu</label>
                     <source_model>Magento\RuchShip\Block\PointTypeOptions</source_model>
                 </field>
+                <field id="sort_order" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Sort Order</label>
+                </field>
             </group>
         </section>
     </system>

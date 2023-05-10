@@ -4,6 +4,8 @@ namespace Magento\RuchShip\Helper;
 
 use \Magento\Framework\App\Helper\AbstractHelper;
 use \Magento\Framework\App\Filesystem\DirectoryList;
+use \Magento\Framework\Measure\Weight;
+use \Magento\Framework\Measure\Length;
 
 /**
  * Helper class providing interface to Ruch API
@@ -61,8 +63,8 @@ class Api extends AbstractHelper
 		$quoteFactory = $objectManager->create('\Magento\Quote\Model\QuoteFactory');
 		$q = $quoteFactory->create()->load($q_id);
 	
-		$weightUnits = $p->getWeightUnits() == \Zend_Measure_Weight::POUND ? 'LBS' : 'KGS';
-		$dimensionsUnits = $p->getDimensionUnits() == \Zend_Measure_Length::INCH ? 'IN' : 'CM';
+		$weightUnits = $p->getWeightUnits() == Weight::POUND ? 'LBS' : 'KGS';
+		$dimensionsUnits = $p->getDimensionUnits() == Length::INCH ? 'IN' : 'CM';
 	
 		if($weightUnits == 'LBS') {
 			$waga = $waga * 0.45359237;

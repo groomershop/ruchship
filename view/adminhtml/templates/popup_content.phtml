@@ -98,8 +98,8 @@
                             <select name="container_girth_dimension_units"
                                     class="options-units-dimensions measures admin__control-select"
                                     onchange="packaging.changeMeasures(this);">
-                                <option value="<?= /* @escapeNotVerified */ Zend_Measure_Length::INCH ?>" selected="selected" ><?= /* @escapeNotVerified */ __('in') ?></option>
-                                <option value="<?= /* @escapeNotVerified */ Zend_Measure_Length::CENTIMETER ?>" ><?= /* @escapeNotVerified */ __('cm') ?></option>
+                                <option value="<?= /* @escapeNotVerified */ \Magento\Framework\Measure\Length::INCH ?>" selected="selected" ><?= /* @escapeNotVerified */ __('in') ?></option>
+                                <option value="<?= /* @escapeNotVerified */ \Magento\Framework\Measure\Length::CENTIMETER ?>" ><?= /* @escapeNotVerified */ __('cm') ?></option>
                             </select>
                         </td>
                             <?php endif; ?>
@@ -130,8 +130,8 @@
                                     <select name="container_weight_units"
                                             class="options-units-weight measures admin__control-select"
                                             onchange="packaging.changeMeasures(this);">
-                                        <option value="<?= /* @escapeNotVerified */ Zend_Measure_Weight::POUND ?>" selected="selected"  ><?= /* @escapeNotVerified */ __('lb') ?></option>
-                                        <option value="<?= /* @escapeNotVerified */ Zend_Measure_Weight::KILOGRAM ?>" ><?= /* @escapeNotVerified */ __('kg') ?></option>
+                                        <option value="<?= /* @escapeNotVerified */ \Magento\Framework\Measure\Weight::POUND ?>" selected="selected"  ><?= /* @escapeNotVerified */ __('lb') ?></option>
+                                        <option value="<?= /* @escapeNotVerified */ \Magento\Framework\Measure\Weight::KILOGRAM ?>" ><?= /* @escapeNotVerified */ __('kg') ?></option>
                                     </select>
                                 <span class="admin__addon-prefix"></span>
                             </div>
@@ -155,8 +155,8 @@
                             <select name="container_dimension_units"
                                     class="options-units-dimensions measures admin__control-select"
                                     onchange="packaging.changeMeasures(this);">
-                                <option value="<?= /* @escapeNotVerified */ Zend_Measure_Length::INCH ?>" selected="selected" ><?= /* @escapeNotVerified */ __('in') ?></option>
-                                <option value="<?= /* @escapeNotVerified */ Zend_Measure_Length::CENTIMETER ?>" ><?= /* @escapeNotVerified */ __('cm') ?></option>
+                                <option value="<?= /* @escapeNotVerified */ \Magento\Framework\Measure\Length::INCH ?>" selected="selected" ><?= /* @escapeNotVerified */ __('in') ?></option>
+                                <option value="<?= /* @escapeNotVerified */ \Magento\Framework\Measure\Length::CENTIMETER ?>" ><?= /* @escapeNotVerified */ __('cm') ?></option>
                             </select>
                         </td>
                         <td class="col-tpl" <?= $avtpl ?>>

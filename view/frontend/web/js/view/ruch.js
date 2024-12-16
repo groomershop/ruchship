@@ -77,14 +77,14 @@ define(
                     if(ruch_pkt) {
                         $('#ruch_widget_sel').html('<p>Wybrany punkt:</p><p>' + ruch_pkt.r + ' ' + ruch_pkt.p + ' ' + ruch_pkt.a + '</p>');
 			    
-			const shippingPointIdInput = ruch_jq(
+			const shippingPointIdInput = $(
 			    '[name="swissup_checkout_field[shipping_point_id]"]'
 			);
 			if (shippingPointIdInput !== null) {
 			    shippingPointIdInput.val(ruch_pkt.id);
 			}
 			        
-			const shippingPointNameInput = ruch_jq(
+			const shippingPointNameInput = $(
 			    '[name="swissup_checkout_field[shipping_point_name]"]'
 			);
 			if (shippingPointNameInput !== null) {

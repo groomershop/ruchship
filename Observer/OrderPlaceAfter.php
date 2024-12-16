@@ -33,6 +33,10 @@ class OrderPlaceAfter implements ObserverInterface
 	        $order = $objectManager->create('\Magento\Sales\Model\Order')->load($id);
 	        $q_id = $order->getQuoteId();
 	        $q = $quoteFactory->create()->load($q_id);
+		$ruch_destinationcode = $q->getData('ruch_destinationcode')
+		if($ruch_destinationcode === null || $ruch_destinationcode == '') {
+		    continue;
+		}
 		$comment = __('ORLEN Paczka: %1', $q->getData('ruch_destinationcode'));
 		$order->addStatusHistoryComment($comment)
                     ->setIsCustomerNotified(false)

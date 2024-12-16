@@ -76,6 +76,20 @@ define(
                     $('#label_carrier_95_0_ruch,#label_carrier_95_1_ruch').html('<div id="ruch_wrapper" style="display: none;"><div id="ruch_widget_sel"></div><div><button class="ruch_sel_point_button" type="button">Wybierz punkt odbioru</button></div></div>');
                     if(ruch_pkt) {
                         $('#ruch_widget_sel').html('<p>Wybrany punkt:</p><p>' + ruch_pkt.r + ' ' + ruch_pkt.p + ' ' + ruch_pkt.a + '</p>');
+			    
+			const shippingPointIdInput = ruch_jq(
+			    '[name="swissup_checkout_field[shipping_point_id]"]'
+			);
+			if (shippingPointIdInput !== null) {
+			    shippingPointIdInput.value = ruch_pkt.id;
+			}
+			        
+			const shippingPointNameInput = ruch_jq(
+			    '[name="swissup_checkout_field[shipping_point_name]"]'
+			);
+			if (shippingPointNameInput !== null) {
+			    shippingPointNameInput.value = ruch_pkt.r + ' ' + ruch_pkt.p + ' ' + ruch_pkt.a;
+			}
                     }
                     $('#ruch_wrapper').slideDown(250);
                 }
@@ -189,6 +203,21 @@ define(
 		            else {
 		                ruch_pkt = ruch_pkt_tmp;
 		                ruch_jq('#ruch_widget_sel').html('<p>Wybrany punkt:</p><p>' + ruch_pkt.r + ' ' + ruch_pkt.p + ' ' + ruch_pkt.a + '</p>');
+
+				const shippingPointIdInput = ruch_jq(
+			            '[name="swissup_checkout_field[shipping_point_id]"]'
+			        );
+			        if (shippingPointIdInput !== null) {
+			            shippingPointIdInput.value = ruch_pkt.id;
+			        }
+			        
+			        const shippingPointNameInput = ruch_jq(
+			            '[name="swissup_checkout_field[shipping_point_name]"]'
+			        );
+			        if (shippingPointNameInput !== null) {
+			            shippingPointNameInput.value = ruch_pkt.r + ' ' + ruch_pkt.p + ' ' + ruch_pkt.a;
+			        }
+
 		            }
 		        },
 		        async: true,

@@ -12,5 +12,10 @@
                     <value id="script_ruch" type="host">ruch-osm.sysadvisors.pl</value>
                 </values>
             </policy>
+            <policy id="connect-src">
+                <values>
+                    <value id="connect_ruch" type="host">ruch-osm.sysadvisors.pl</value>
+                </values>
+            </policy>
         </policies>
 </csp_whitelist>

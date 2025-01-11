@@ -44,8 +44,8 @@ class Shipping extends \Magento\Shipping\Model\Carrier\AbstractCarrier implement
 		
 		$payments = $this->_paymentModelConfig->getActiveMethods();
 		$result = $this->_rateResultFactory->create();
-		$result->append($this->meth2rate(array('ID' => 95, 'Name' => $this->getConfigFlag('label')), 0, $request));
-		if(array_key_exists('cashondelivery', $payments) && $this->getConfigFlag('codActive')) $result->append($this->meth2rate(array('ID' => 95, 'Name' => $this->getConfigFlag('label')), 1, $request));
+		$result->append($this->meth2rate(array('ID' => 95, 'Name' => $this->getConfigData('label')), 0, $request));
+		if(array_key_exists('cashondelivery', $payments) && $this->getConfigFlag('codActive')) $result->append($this->meth2rate(array('ID' => 95, 'Name' => $this->getConfigData('label')), 1, $request));
 		return $result;
 	}
 
